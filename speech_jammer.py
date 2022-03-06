@@ -72,7 +72,7 @@ def runDaf(btDevicePath):
                                             "-P",
                                             "plughw:1,0",
                                             "-t",
-                                            "200000",
+                                            randomDelay,
                                         ]
                                     )
                                     GPIO.output(statusLedPin, GPIO.HIGH)
