@@ -6,7 +6,7 @@ This scripts are intended to work on any Ubuntu or Windows system.
 Ubuntu compatible rebuilt version is only using built-in Python modules so the script is ready to use at first run.
 Windows compatible rebuilt requires dependency installation.
 
-# Dependency
+# Dependency (for Windows)
 In order to use windows compatible script [Sounddevice](https://python-sounddevice.readthedocs.io/en/0.4.4/installation.html) module is required.
 
 To install the latest release from PyPI, use:
