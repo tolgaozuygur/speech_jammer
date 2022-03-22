@@ -110,7 +110,8 @@ def runDaf(btDevicePath):
                         GPIO.output(statusLedPin, GPIO.LOW)
                         time.sleep(0.1)
                     subprocess.call("sudo shutdown -h now", shell=True)
-    except:
+    except Exception as e:
+        print(str(e))
         print("Controller disconnected.")
         if silencerActive == 1:
             GPIO.output(statusLedPin, GPIO.LOW)
