@@ -24,6 +24,11 @@ def main():
                     print("Program terminated.")
                     break
                 print("Program stopped...")
+        except sd.PortAudioError as e:
+            print("Error:", e)
+            if e.errno == -9987:
+                print("Please make sure you have a microphone connected or its not muted.")
+            break
         except KeyboardInterrupt:
             print("Program stopped via keyboard interrupt.")
 
